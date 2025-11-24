@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Models\Component;
 use Illuminate\Http\Request;
 
 class ComponentController extends Controller
@@ -12,7 +13,8 @@ class ComponentController extends Controller
      */
     public function index()
     {
-        //
+        $components = Component::all();
+        return response()->json($components);
     }
 
     /**

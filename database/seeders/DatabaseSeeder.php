@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
             BusinessSeeder::class,
             ProductSeeder::class,
             ComponentSeeder::class,
-            ProductPredictionSeeder::class,
+            SalesHistorySeeder::class,
         ]);
     }
 }

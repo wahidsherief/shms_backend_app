@@ -15,10 +15,14 @@ class Product extends Model
     }
 
     public function predictions() { 
-        return $this->hasMany(ProductPrediction::class); 
+        return $this->hasMany(Prediction::class); 
     }
 
     public function business() { 
         return $this->belongsTo(Business::class); 
+    }
+
+    public function salesHistories() { 
+        return $this->hasMany(SalesHistory::class); 
     }
 }
